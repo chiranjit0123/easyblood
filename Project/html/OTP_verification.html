@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/popup_dialogBox.css">
+	<link rel="stylesheet" type="text/css" href="../css/otp_verification.css">
+</head>
+
+<body onload="zoom_dialog_box('otp-verification-form')" onkeydown="fillCode()" onkeydown="fillCode()">
+
+<!-- Pop up window blurred backgroung-->
+<div id="container-background">
+
+	<!-- Pop up dialog box -->
+	<div id="otp-verification-form">
+
+		<h1>Verification</h1>
+		<p>Enter the 4-digit Verification code we just sent to email <br> address <span>example@gmail.com</span></p>
+
+		<input type="text" class="code" onfocus="inputOTP(this)" maxlength="1" disabled>
+		<input type="text" class="code" onfocus="inputOTP(this)" maxlength="1" disabled>
+		<input type="text" class="code" onfocus="inputOTP(this)" maxlength="1" disabled>
+		<input type="text" class="code" onfocus="inputOTP(this)" maxlength="1" disabled>
+
+		<p id="resendCode">Didn't get the code ? <a href="#">Resend</a></p>
+
+		<input type="button" value="Verify" id="verify">
+	</div>
+</div>
+
+<!-- Java script code begins from here -->
+<script src="../js/popup_dialog_box.js"></script>
+<script src="../js/OTP_verification.js"></script>
+
+</body>
+</html>
