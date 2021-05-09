@@ -1,0 +1,87 @@
+#img-container {
+
+	height: 100%;
+	width: 40%;
+	float: left;
+	position: relative;
+}
+
+#img-container img {
+
+	height: 200px;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+}
+
+#img-container #shadow {
+
+	height: 70px;
+	width: 80px;
+	border-radius: 50px;
+	background-color: rgba(240, 56, 95, 0.2);
+	position: absolute;
+	top: 58%;
+	left: 37%;
+	transform: rotateX(65deg);
+}
+
+#msg-container {
+
+	font-family: calibri;
+	color: white;
+	width: 60%;
+	height: 100%;
+	background-color: ;
+	text-align: center;
+	float: left;
+	background-color: rgb(199, 15, 54);
+}
+
+#msg-container h1 {
+
+	font-size: 48px;
+}
+
+#msg-container h2 {
+
+	font-size: 20px;
+	margin-top: -20px; 
+}
+		
+#msg-container h3 {
+
+	font-size: 22px;
+	text-align: left;
+	margin-left: 7%;
+	margin-top: 40px;
+}
+		
+#msg-container p {
+
+	font-size: 21px;
+	margin: 0px 5px;
+}
+
+#msg-container input {
+
+	height: 40px;
+	width: 150px;
+	border: none;
+	border-radius: 50px;
+	margin: 5px 24px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#msg-container input:hover {
+
+	background-color: rgb(236, 18, 65);
+	color: rgb(255, 255, 255);
+}
+
+#msg-container input:active {
+
+	background-color: rgb(143, 11, 39);
+}
