@@ -1,0 +1,229 @@
+body {
+
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	background-color: #aaa;
+}
+
+nav {
+
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid white;
+	padding: 0px;
+	color: white;
+	overflow: hidden;
+	box-shadow: 4px 0 8px #aaa;
+}
+
+.top-navbar-menu {
+
+	margin: 9px 0px;
+}
+
+.top-navbar-menu > li:nth-child(1) {
+
+	display: none;
+}
+
+.top-navbar-menu > li {
+
+	display: inline-block;
+	border-radius: 50px;
+}
+
+.top-navbar-menu > li a {
+
+	padding: 5px 20px;
+}
+
+.top-navbar-menu > li:hover {
+
+	background-color: #eee;
+}
+
+.top-navbar-menu .menu-right:hover {
+
+	background-color: transparent;
+}
+
+.top-navbar-menu li a,
+.top-navbar-menu li button {
+
+	text-decoration: none;
+	list-style-type: none;
+	font-weight: bold;
+	font-family: calibri;
+	font-size: 16px;
+	display: block;
+	color: black;
+}
+
+
+.dropdown button{
+
+	border: none;
+	outline: none;
+	padding: 5px 20px;
+	background-color: transparent;
+	font-weight: bold;
+	font-family: calibri;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+
+	position: absolute;
+	margin-left: -15px;
+	top: 30px;
+	box-shadow: 1px 1px 4px #999;
+	border-radius: 5px;
+	padding: 0;
+	margin-top: 15px;
+	background-color: #fcfcfc;
+	overflow: hidden;
+	height: 0px;
+	transition: height 0.4s, display 0s;
+}
+
+.dropdown-menu li {
+
+	list-style-type: none;
+}
+
+.dropdown-menu li a{
+
+	display: block;
+	padding: 10px 20px;
+	border-radius: 0;
+}
+
+.dropdown-menu li:hover {
+
+	background-color: #eee;
+}
+
+.top-navbar-menu .menu-right {
+
+	float: right;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+.top-navbar-menu .menu-right button {
+
+	padding: 0px;
+	padding-top: 5px;
+}
+
+.top-navbar-menu .fa-user-circle {
+
+	font-size: 26px;
+	margin-top: -4px;
+	cursor: pointer;
+}
+
+.top-navbar-menu .active {
+
+	background-color: #eee;
+}
+
+#account-menu {
+
+	margin-left: -85px;
+}
+
+/*----------------------------- for small screen ------------------------------------------------*/
+@media only screen and (max-width: 790px) {
+
+#menu {
+	transition: height 1s;
+	overflow-x: auto;
+	scroll-behavior: smooth; 
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+
+#menu::-webkit-scrollbar {
+  display: none;
+}
+
+.top-navbar-menu {
+
+	padding-left: 0;
+	margin: 0px;
+	height: 28px;
+	font-size: 20px;
+}
+
+.top-navbar-menu > li:nth-child(1) {
+
+	display: block;
+}
+
+
+.top-navbar-menu > li {
+
+	display: block;
+	border-radius: 0px;
+}
+
+.top-navbar-menu button {
+
+	width: 100%;
+	text-align: left;
+}
+
+.dropdown-menu {
+
+	position: relative;
+	top: 0px;
+	left: 0px;
+	box-shadow: none;
+	border-radius: 0px;
+	padding: 0;
+	margin: 0;
+	background-color: red;
+}
+
+.dropdown-menu li a{
+
+	
+	padding-left: 20px;
+}
+
+.dropdown-menu:hover {
+
+	height: 30px;
+}
+
+.top-navbar-menu .menu-right {
+
+	float: none;
+	margin: 0px;
+}
+
+.top-navbar-menu .menu-right:hover {
+
+	background-color: #eee;
+}
+
+.top-navbar-menu .menu-right button{
+
+	padding-left: 20px;
+}
+.top-navbar-menu .menu-right #account-menu {
+
+	margin: 0px;
+}
+
+.top-navbar-menu .fa-user-circle {
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 22px; 
+}
+
+}
