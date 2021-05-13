@@ -609,7 +609,8 @@ input[type="submit"]:active {
 	transform: none;
 	transform: scale(2.5);
 }
-
+	
+.circle,
 #container #image-container {
 	display: none;
 }
