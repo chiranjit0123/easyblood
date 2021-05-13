@@ -601,6 +601,9 @@ input[type="submit"]:active {
 
 @media only screen and (min-width: 600px) {
 
+#login-bg {
+	background-image: linear-gradient(to bottom right, rgb(255, 65, 108) 30%, rgb(255, 75, 43));
+}
 #container {
 	width: 370px;
 	padding: 0px;
