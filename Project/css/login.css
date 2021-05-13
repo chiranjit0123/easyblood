@@ -23,6 +23,7 @@ body {
 	background-size: cover;
 	position: relative;*/
 	background-color: rgb(160, 36, 38);
+	overflow: hidden;
 }
 
 .circle {
@@ -400,9 +401,14 @@ body {
 
 #image-container, #form-container  {
 
+	display: block;
 	float: left;
 	width: 50%;
 	height: 93%;
+}
+
+#container #form-container {
+	padding: 0px;
 }
 
 #image-container #logo {
@@ -589,4 +595,39 @@ input[type="submit"]:active {
 #container #create-account a:hover {
 
 	color: #FFE000;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+#container {
+	width: 370px;
+	padding: 0px;
+	top: 30%;
+	left: 31%;
+	transform: none;
+	transform: scale(2.5);
+}
+
+.circle,
+#container #image-container {
+	display: none;
+}
+
+#container #form-container {
+	width: 370px;
+	background-color: transparent;
+}
+
+#container #create-account {
+	position: absolute;
+	bottom: 10px;
+	left: 10%;
+}
+
+#footer {
+	font-size: 30px;
+}
+
 }
