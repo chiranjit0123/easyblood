@@ -1,0 +1,102 @@
+.faq-section {
+  margin-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(to right, #00B4DB, #0083B1);
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #00CCEB;
+  color: 111;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  position: relative;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-left: 10%;
+  border-bottom: 1px solid #008EAA;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: Roboto;
+}
+
+.accordion i {
+  margin-right: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-accordion, .accordion:hover {
+  background-color: #0FD8FF;
+}
+
+.accordion:after {
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active-accordion:after {
+  content: "\2212";
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  width: 80%;
+  position: relative;
+  margin-left: 10%;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+.panel p {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.faq-link {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: KoHo;
+  padding: 20px 0px;
+  margin-top: 10px;
+}
+
+.faq-link a {
+  color: darkblue;
+  margin-left: 10px;
+}
+
+.faq-link a:hover {
+  color: skyblue;
+}
+
+@media only screen and (max-width: 768px) {
+
+.accordion, .panel {
+  width: 98%;
+  margin-left: 1%;
+}
+
+}
+
+@media only screen and (max-width: 580px) {
+
+.accordion {
+  font-size: 0.9rem;
+}
+
+}
