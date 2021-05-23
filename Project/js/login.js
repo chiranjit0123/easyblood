@@ -44,7 +44,7 @@ function loadYear() {
 
 	var d = new Date();
 	document.getElementById("year").innerHTML = d.getFullYear()+"-"+(d.getFullYear() + 1);
-}
+};
 
 
 // for password change page 
