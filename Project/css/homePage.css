@@ -645,3 +645,34 @@
 }
 
 
+@media only screen and (max-width: 390px) {
+
+.tips-content p {
+	margin-right: 0;
+}
+
+.tips-content h1 {
+	text-align: center;
+	font-size: 2.1rem;
+	margin-bottom: 10px;
+}
+
+.image-container-2 div button {
+	margin-left: 35%;
+}
+
+.image-container-3 div button {
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+#condition {
+	float: none;
+	display: block;
+}
+
+.terms {
+	text-align: center;
+}
+}
+
