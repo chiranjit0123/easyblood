@@ -96,6 +96,7 @@
 	cursor: pointer;
 	font-family: 'KoHo', sans-serif;
 	font-weight: bold;
+	outline: none;
 }
 
 .box-button:hover {
@@ -197,6 +198,7 @@
 	background-color: rgba(0,0,0,0.5);
 	cursor: pointer;
 	color: dodgerblue;
+	outline: none;
 }
 
 .image-container-2 div button:hover {
@@ -324,6 +326,7 @@
 	font-size: 1.1rem;
 	cursor: pointer;
 	background-color: rgb(255,255,255);
+	outline: none;
 }
 
 .donation-instruction {
