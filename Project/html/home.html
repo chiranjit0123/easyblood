@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="../css/navigationBar.css">
+	<link rel="stylesheet" type="text/css" href="../css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="../css/homepage.css">
+	<link rel="stylesheet" type="text/css" href="../css/accordion.css">
+
+</head>
+<body onload="loadYear()">
+	
+<!-- Navigation Bar -->
+<nav class="navbar">
+	<div id="header">
+		<a href="#" id="logo-container">
+			<img id="logo" src="#" alt="Easy Blood logo">
+		</a>
+		<a id="menu-icon" class="sm-device" href="Javascript:void(0)" onclick="toggleMenu()" ><i class="fas fa-bars"></i> Menu</a>
+	</div>
+
+	<ul class="navbar-navgation hide" id="navigation">
+		<li class="navigation-item">
+			<a class="navigation-links active-menu-item" href="#">Home</a>
+		</li>
+		<li class="navigation-item">
+			<a class="navigation-links" href="#">Gallery</a>
+		</li>
+		<li class="navigation-item">
+			<a class="navigation-links" href="#">Health Tips</a>
+		</li>
+		<li class="navigation-item">
+			<a class="navigation-links" href="#">News</a>
+		</li>
+
+		<!-- Dropdown menu -->
+		<li class="navigation-item dropdown" >
+			<a class="navigation-links" href="#">Services <i class="fas fa-chevron-down"></i></a>
+			<ul class="dropdown-menu">
+				<li class="dropdown-menu-item">
+					<a class="navigation-links" href="#">Blood Request</a>
+				</li>
+				<li class="dropdown-menu-item">
+					<a class="navigation-links" href="#">Blood Camp</a>
+				</li>
+				<li class="dropdown-menu-item">
+					<a class="navigation-links" href="#">Blood Banks</a>
+				</li>
+			</ul>
+		</li>
+
+		<li class="navigation-item">
+			<a class="navigation-links" href="#">Contact</a>
+		</li>
+		<li class="navigation-item">
+			<a class="navigation-links" href="#">About</a>
+		</li>
+		
+		<!-- Dropdown menu -->
+		<li class="navigation-item dropdown navigation-right lg-device">
+			<a class="navigation-links" href="#"> <i class="fas fa-user-circle"></i> </a>
+			<ul class="dropdown-menu">
+				<li class="dropdown-menu-item">
+					<a class="navigation-links" href="#"> <i class="fas fa-sign-in-alt"></i> Login</a>
+				</li>
+				<li class="dropdown-menu-item">
+					<a class="navigation-links" href="#"> <i class="fas fa-user"></i> Sign Up</a>
+				</li>
+				<li class="dropdown-menu-item">
+					<a class="navigation-links" href="#"> <i class="fas fa-user-shield"></i> Admin/Staff</a>
+				</li>
+			</ul>
+		</li>
+
+		<li class="navigation-item sm-device">
+			<a class="navigation-links" href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+		</li>
+		<li class="navigation-item sm-device">
+			<a class="navigation-links" href="#"><i class="fas fa-user"></i> Sign Up</a>
+		</li>
+		<li class="navigation-item sm-device">
+			<a class="navigation-links" href="#"><i class="fas fa-user-shield"></i> Admin/Staff</a>
+		</li>
+	</ul>
+</nav>
+
+<!-- carousel -->
+<div class="carousel-container" onmouseover="stopSlide()" onmouseout="startSlide()">
+	
+	<span class="prev-slide" onclick="prevSlide()">
+		<i class="fas fa-chevron-left icon-left"></i>
+	</span>
+	<span class="next-slide" onclick="nextSlide()">
+		<i class="fas fa-chevron-right icon-right"></i>
+	</span>
+
+	<div>
+		<span class="carousel-dot dot-1 active"></span>
+		<span class="carousel-dot dot-2"></span>
+		<span class="carousel-dot dot-3"></span>
+	</div>
+
+	<div id="carousel">
+		<div class="carousel-slide slide-1">
+			<img src="../image/blood_cells.jpg">
+			<div class="carousel-content">
+				<h1>Help Us Help Others</h1>
+				<p>Your blood can help save someone's life.<br>Become a donor today.</p>
+				<a href="#"><button>Register</button></a>
+			</div>
+		</div>
+
+		<div class="carousel-slide slide-2">
+			<img src="../image/leaf.jpg">
+			<div class="carousel-content">
+				<h1>Get Daily Health Tips</h1>
+				<p>Get updated daily with the new health tips.<br>To keep yourself fit and healthy.</p>
+				<a href="#"><button>Subscribe</button></a>
+			</div>
+		</div>
+
+		<div class="carousel-slide slide-3">
+			<img src="../image/faq.png" height="400px">
+			<div class="carousel-content">
+				<h1>Any Questions In Mind</h1>
+				<p>Go to our Frequently Asked Question section.<br>Always feel free to ask.</p>
+				<a href="#"><button>FAQs</button></a>
+			</div>
+		</div>
+	</div>
+ </div>
+
+<!-- Our work section begins here -->
+<p class="heading-container"><span class="section-heading">Our Work</span></p>
+<div class="box-container">
+	<div class="box">
+		<p><i class="fas fa-first-aid"></i></p>
+		<h1>Blood Camp</h1>
+		<p class="description">We intend donors to get opportunity to donate according to their convenience.</p>
+		<a href="#"><button class="box-button">Apply Now</button></a>
+	</div>
+	<div class="box">
+		<p><i class="fas fa-heartbeat"></i></p>
+		<h1>Blood Request</h1>
+		<p class="description"></p>
+		<a href="#"><button class="box-button">Request Now</button></a>
+	</div>
+	<div class="box">
+		<p><i class="fas fa-tint"></i></p>
+		<h1>Blood Donation</h1>
+		<p class="description"></p>
+		<a href="#"><button class="box-button">Read More</button></a>
+	</div>
+</div>
+
+
+<!-- Health section begins here -->
+<div class="health-section">
+	<p class="heading-container"><span class="section-heading">Healthy Lifestyle</span></p>
+	<div class="image-container-1" >
+		<img src="../image/health4.png">
+		<h1>STAY HEALTHY</h1>
+		<p><i class="fas fa-quote-left"></i>
+			<br>
+			Health is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity. ”
+			<br>
+			<br> <span>-  WHO (World Health Organization)</span>
+		</p>
+	</div>
+	<div class="health-tips">
+		<div class="tips-container ">
+			<div class="icon-container"  id="carrot">
+				<i class="fas fa-carrot"></i>
+			</div>
+			<div class="tips-content">
+				<h1>EAT HEALTHY</h1>
+				<p>Unsafe  food  containing  harmful  bacteria,  viruses,  parasites  or chemical  substances,  causes  more  than 200 diseases – ranging from diarrhoea tocancers. When buying food at the  market  store, check the labels or the actual produce to ensure it is safe to eat.</p>
+			</div>
+		</div>
+		<div class="tips-container">
+			<div class="icon-container"  id="regular-checkup">
+				<i class="fas fa-notes-medical"></i>
+			</div>
+			<div class="tips-content">
+				<h1>REGULAR CHECKUPS</h1>
+				<p>Unsafe  food  containing  harmful  bacteria,  viruses,  parasites  or chemical  substances,  causes  more  than 200 diseases – ranging from diarrhoea tocancers. When buying food at the  market  store, check the labels or the actual produce to ensure it is safe to eat.</p>
+			</div>
+		</div>
+		<div class="tips-container">
+			<div class="icon-container"  id="rest">
+				<i class="fas fa-procedures"></i>
+			</div>
+			<div class="tips-content">
+				<h1>PROPER REST</h1>
+				<p>Unsafe  food  containing  harmful  bacteria,  viruses,  parasites  or chemical  substances,  causes  more  than 200 diseases – ranging from diarrhoea tocancers. When buying food at the  market  store, check the labels or the actual produce to ensure it is safe to eat.</p>
+			</div>
+		</div>
+		<div class="tips-container">
+			<div class="icon-container" id="exercise">
+				<i class="fas fa-walking"></i>
+			</div>
+			<div class="tips-content">
+				<h1>EXERCISE</h1>
+				<p>Unsafe  food  containing  harmful  bacteria,  viruses,  parasites  or chemical  substances,  causes  more  than 200 diseases – ranging from diarrhoea tocancers. When buying food at the  market  store, check the labels or the actual produce to ensure it is safe to eat.</p>
+			</div>
+		</div>
+	</div>
+	<div class="image-container-2">
+		<img src="../image/disease.jpg">
+		<div>
+			<p>
+				We wish to make world a healthy place and you can play your part in  it by keeping  yourself  healthy. In order to
+				do that we provide you with the various ways how to keep ourselves healthy and make our immune system strong
+				enough to protect and fight with the various disease causing germs.
+			</p>
+			<p>
+				To learn of those ways of protecting our body from those diseases go to our health tips  section by clicking on the
+				button below.
+			</p>
+			<a href="#"><button>Learn More</button></a>
+		</div>
+	</div>
+	
+</div>
+
+<!-- Blood Donation section begins here -->
+<div class="blood-donation-section">
+
+<p class="heading-container"><span class="section-heading">Blood Donation</span></p>
+<div class="image-container-3">
+	<img src="../image/blood.jpg">
+	<div>
+		<p>
+			<b>According to Red Cross</b>, one donation can save as many as three lives.
+		</p>
+		<p>
+			Donating blood doesn’t just benefit recipients. There are health benefits for donors, too, on top of the benefits that come from helping others. 
+
+		</p>
+		<p>
+			Read on to learn the health benefits of donating blood and the reasons behind them.
+		</p>
+		<a href="#">
+			<button>Know More</button>
+		</a>
+	</div>
+</div>
+<div class="donation-instruction">
+	<h1>What to know before you donate</h1>
+	<h2>Here are some important things to know before you donate:</h2>
+	<table>
+		<tr>
+			<td class="icon">
+				<i class="fas fa-male"></i>
+			</td>
+			<td class="instruction">
+				You need to be 17 or older.
+			</td>
+		</tr>
+
+		<tr>
+			<td class="icon">
+				<i class="fas fa-weight"></i>
+			</td>
+			<td class="instruction">
+				You have to weigh at least 110 pounds and be in good health to donate.
+			</td>
+		</tr>
+		<tr>
+			<td class="icon">
+				<i class="far fa-calendar-alt"></i>
+			</td>
+			<td class="instruction">
+				You must wait at least 8 weeks between whole blood donations and 16 weeks between double red cell donations.
+			</td>
+		</tr>
+		<tr>
+			<td class="icon">
+				<i class="fas fa-file-alt"></i>
+			</td>
+			<td class="instruction">
+				You need to provide information about medical conditions and any medications you’re taking. These may affect your eligibility to donate blood.
+			</td>
+		</tr>
+	</table>
+
+	<h3>Here are some suggestions to help you prepare for donating blood:</h3>
+	<table>
+		<tr>
+			<td class="icon">
+				<i class="fas fa-glass-whiskey"></i>
+			</td>
+			<td class="instruction">
+				Drink an extra 16 ounces of water before your appointment.
+			</td>
+		</tr>
+		<tr>
+			<td class="icon">
+				<i class="fas fa-utensils"></i>
+			</td>
+			<td class="instruction">
+				Eat a healthy meal that’s low in fat.
+			</td>
+		</tr>
+	</table>
+
+</div>
+</div>
+
+<p class="heading-container"><span class="section-heading">FAQs</span></p>
+<div class="faq-section">
+	<button class="accordion"><i class="far fa-question-circle"></i> 
+		Does donating blood lower risk of heart Disease 
+	</button>
+	<div class="panel">
+  		<p>Lorem ipsum...</p>
+	</div>
+
+	<button class="accordion"><i class="far fa-question-circle"></i> 
+		What are the cons of Blood Donation 
+	</button>
+	<div class="panel">
+  		<p>Lorem ipsum...</p>
+	</div>
+
+	<button class="accordion" style="border-bottom: none;"><i class="far fa-question-circle"></i>  
+		Best foods to eat before blood donation 
+	</button>
+	<div class="panel">
+  		<p>Lorem ipsum...</p>
+	</div>
+
+	<div class="faq-link">
+		<p>To get your questions answered goto our frequently asked questions page <a href="#">Read&nbsp;More&nbsp;FAQs</a></p>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="footer-box">
+		<h1>Support</h1>
+		<a href="#">FAQs</a><br>
+		<a href="#">Contact Us</a>
+	</div>
+	<div class="footer-box">
+		<h1>Services</h1>
+		<a href="#">Blood Request</a><br>
+		<a href="#">Health Tips</a>
+	</div>
+	<div class="footer-box">
+		<h1>Getting Started</h1>
+		<a href="#">Sign up</a><br>
+		<a href="#">Sign in</a>
+	</div>
+</div>
+<div class="terms">
+	<span id="copyright"> <i class="far fa-copyright"></i> Copyright | <span id="year"></span> </span>
+	<span id="condition"> <a href="#">Terms and conditions </a> and <a href="#">Privacy Policy</a> </span>
+</div>
+<!-- Javascript code links -->
+<script src="../js/navigationBar.js"></script>
+<script src="../js/carousel.js"></script>
+<script src="../js/accordion.js"></script>
+<script src="../js/login.js"></script>
+
+</body>
+</html>
