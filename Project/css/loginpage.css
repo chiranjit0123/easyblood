@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Pattaya&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'Pattaya', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Varela Round', sans-serif;
+*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.center-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	color: rgb(248, 7, 89);
+	margin: 0 5px;
+	font-size: 1.05rem;
+}
+
+a:hover {
+	color: orange;
+}
+
+::placeholder {
+	font-family: 'Nunito', sans-serif;;
+	letter-spacing: 0.05rem;
+	font-size: 1.01rem;
+	font-weight: bold;
+}
+
+#login-bg {
+
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(to bottom right, rgb(255, 65, 108) 30%, rgb(255, 75, 43));
+	position: relative;
+	background-color: rgb(160, 36, 38);
+	overflow: auto;
+}
+
+.login-container {
+	width: 900px;
+	height: 600px;
+	background-color: white;
+	position: absolute;
+	border-radius: 8px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.head-box {
+	float: left;
+	width: 50%;
+	height: 20%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: rgb(0, 32, 96);
+}
+
+.container-box {
+	width: 50%;
+	height: 70%;
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+}
+
+#image-container img {
+	height: 70%;
+	margin-bottom: auto;
+}
+
+#form-container form {
+	width: 80%;
+	height: 80%;
+	margin-bottom: auto;
+}
+
+#form-container span {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 8px; 
+	font-size: 1.1rem;
+}
+
+#register-link,
+#terms {
+	float: left;
+	width: 100%;
+	height: 10%;
+}
+
+#register-link {
+	position: absolute;
+	bottom: 0;
+}
+
+#terms {
+	border-top: 2px solid #efefef;
+	font-family: calibri;'Nunito', sans-serif;
+	font-weight: bolder;
+	font-size: 0.9rem;
+}
+
+#terms i {
+	margin-right: 5px;
+}
+
+#terms a {
+	font-size: 1rem;
+}
+
+.input-container,
+.account-type-container {
+	border-radius: 50px;
+	border: 2px solid rgb(0, 32, 96);
+	width: 100%;
+	justify-content: space-around;
+	padding: 2px;
+}
+
+.account-type-container {
+	border: none; 
+}
+
+.inputbox {
+	height: 30px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-family: calibri;
+	letter-spacing: 0.05rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+#email {
+	width: 89%;
+}
+
+#password {
+	width: 80%;
+}
+
+.link-container {
+	height: 30%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+input[type="submit"] {
+	padding: 7px 0;
+	width: 60%;
+	text-align: center;
+	border-radius: 60px;
+	cursor: pointer;
+	background-color: rgb(248, 7, 89);rgb(237, 33, 58);rgb(0, 32, 96);
+	color: white;
+	border: none;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.1rem;
+	font-weight: bolder;
+	letter-spacing: 0.15rem;
+}
+
+input[type="submit"]:hover {
+	background: linear-gradient(to right, #20BDFF, #5433FF); ;rgb(0, 32, 96);
+}
+
+input[type="radio"] {
+	
+	position: absolute;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+
+.account:checked + label, 
+.account:not(:checked) + label {
+
+	display: inline-block;
+	padding: 5px 18px;
+	width: 130px;
+	text-align: center;
+	border: 2px solid rgb(0, 32, 96);
+	border-radius: 50px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	transition: background-color 0.1s, color 0.1s; 
+	cursor: pointer;
+}
+
+.account:checked + label{
+
+	background-color: rgb(23, 55, 94);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+.account:not(:checked) + label:hover{
+	
+	border-width: 3px;
+	padding: 4px 17px; 
+}
+
+.pwdIcon {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+
+.login-container {
+	width: 700px;
+	height: 500px;
+}
+
+#form-container form {
+	width: 90%;
+	height: 90%;
+}
+
+.link-container {
+	height: 30%;
+}
+
+.head-box {
+	font-size: 1.4rem;
+}
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+.login-container {
+	width: 90%;
+	height: 80%;
+	min-height: 500px;
+}
+
+#image-container {
+	display: none;
+}
+
+#form-container {
+	width: 100%;
+	height: 70%;
+	border: ;1px solid black;
+}
+
+#form-container form {
+	width: 55%;
+}
+
+.head-box {
+	width: 100%;
+	height: 10%;
+	border: ;1px solid red;
+}
+
+}
+
+@media only screen and (max-width: 570px) {
+
+
+#form-container form {
+	width: 70%;
+}
+
+#terms {
+	font-size: 0.8rem;
+}
+
+#terms a {
+	font-size: 0.85rem;
+}
+
+}
+
+@media only screen and (max-width: 420px) {
+
+#login-bg {
+	display: block;
+	min-height: 750px;
+}
+
+.login-container {
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 25px;
+	min-height: 700px;
+}
+
+#form-container form {
+	width: 90%;
+}
+
+#terms {
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+}
