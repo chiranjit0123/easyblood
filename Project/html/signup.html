@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="../css/signup.css">
+</head>
+<body>
+
+<div id="signup-bg" class="center-flex">
+
+	<div id="container" class="center-flex">
+		<span id="logo">signup</span>
+
+		<div class="container-box center-flex" id="greeting-container">
+
+			<div id="icon-container">
+				<i class="fas fa-user-circle"></i>
+			</div>
+			<div id="greeting">
+				Welcome !
+			</div>
+
+		</div>
+
+		<div class="container-box center-flex" id="input-container">
+
+			<div id="input-head" class="center-flex">
+				Register
+			</div>
+
+			<div id="form-container" class="center-flex">
+				<div id="input-subhead" class="center-flex">
+					<span class="section-head active-head">Set Credentials</span>
+					<span class="section-head">Personal Information</span>
+					<span class="section-head">Address Details</span>
+					<span class="section-head">Terms and Conditions</span>
+
+					<span class="steps">Step <span id="slideCount">1</span> of 4</span>
+				</div>
+
+				<form class="center-flex">
+
+					<!-- contains all slides  -->
+					<div id="slide-container" class="center-flex">
+
+						<!-- slide one : Credentials -->
+						<div class="slides center-flex active-slide">
+
+							<div class="user-input center-flex">
+								<div class="input-box center-flex">
+									<input type="email" name="email" placeholder="Email ID" style="width: 100%;">
+								</div>
+								<div class="input-box center-flex">
+									<input type="password" name="password" placeholder="Password" class="password">
+									<i class="fas fa-eye-slash pwdIcon"></i>
+								</div>
+								<div class="input-box center-flex">
+									<input type="password" placeholder="Confirm Password" class="password">
+									<i class="fas fa-eye-slash pwdIcon"></i>
+								</div>
+							</div>
+							<div id="pwd-instructions">
+								
+							</div>
+						</div>
+
+						<!-- slide two : personal Info -->
+						<div class="slides">
+
+							<div class="user-info center-flex">
+								<div class="input-box center-flex">
+									<input type="text" name="firstname" placeholder="First Name">
+								</div>
+								<div class="input-box center-flex">
+									<input type="text" name="lastname" placeholder="Last Name">
+								</div>
+								<div class="input-box center-flex">
+									<input type="text" name="email" placeholder="Contact Number">
+								</div>
+								<div class="input-box center-flex">
+									<select>
+										<option>Blood Group</option>
+										<option> A Positive</option>
+										<option>A Negative</option>
+										<option>B Positive</option>
+										<option>B Negative</option>
+										<option>AB Positive</option>
+										<option>AB Negative</option>
+										<option>O Positive</option>
+										<option>O Negative</option>
+									</select>
+								</div>
+								<div class="input-box center-flex">
+									<select>
+										<option>Gender</option>
+										<option> Male</option>
+										<option>Female</option>
+										<option> Other </option>
+									</select>
+								</div>
+								<div class="input-box center-flex">
+									<input type="date" name="email" placeholder="Birthday">
+								</div>
+							</div>
+						</div>
+
+						<!-- slide three : address info -->
+						<div class="slides">
+							<div class="user-info center-flex">
+								<div class="input-box center-flex">
+									<input type="text" name="state" placeholder="State">
+								</div>
+								<div class="input-box center-flex">
+									<input type="text" name="district" placeholder="District">
+								</div>
+								<div class="input-box center-flex">
+									<input type="text" name="city" placeholder="City">
+								</div>
+								<div class="input-box center-flex">
+									<input type="text" name="pincode" placeholder="Pincode">
+								</div>
+							</div>
+						</div>
+
+						<!-- slide four : terms and conditions -->
+						<div class="slides">
+							<div class="frame-container center-flex">
+								<iframe src="#" id="policy">
+									
+								</iframe>
+							</div>
+							<div id="agree" class="center-flex">
+								<label for="check"><input type="checkbox" name="check" id="check"> I agree to the terms and conditions.</label>
+							</div>
+						</div>
+						
+					</div>
+
+					<div id="slide-controls" class="center-flex">
+						<a class="control-buttons prev"><i class="fas fa-arrow-left"></i> Prev</a>
+						<a class="control-buttons next active-button">Next <i class="fas fa-arrow-right"></i></a>
+						<input type="submit" name="submit" value="Create Account" id="register-button" class="control-buttons" disabled="true">
+					</div>
+
+					<div id="user-login" class="center-flex">
+						<span>Already have an account ? <a href="login.html"> Sign&nbsp;in </a></span>
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="../js/signup.js"></script>
+<script type="text/javascript" src="../js/loginpage.js"></script>
+
+</body>
+</html>
